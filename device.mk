@@ -22,5 +22,9 @@ $(call inherit-product-if-exists, vendor/samsung/trlte/trlte-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/trlte/overlay
 
+# Variant blobs script
+PRODUCT_COPY_FILES += \
+    device/samsung/trlte-common/releasetools/variant_blobs.sh:install/bin/variant_blobs.sh
+
 # common trlte
 $(call inherit-product, device/samsung/trlte-common/trlte.mk)

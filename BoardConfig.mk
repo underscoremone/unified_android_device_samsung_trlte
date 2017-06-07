@@ -25,5 +25,8 @@ TARGET_FIXUP_PREVIEW := true
 TARGET_INIT_VENDOR_LIB := libinit_trlte
 TARGET_UNIFIED_DEVICE := true
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/trlte-common/releasetools
+
 # inherit from the proprietary version
 -include vendor/samsung/trlte/BoardConfigVendor.mk
